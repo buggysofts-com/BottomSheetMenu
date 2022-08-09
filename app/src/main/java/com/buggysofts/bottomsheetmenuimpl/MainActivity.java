@@ -31,9 +31,6 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     try {
-                        Drawable itemPlaceHolder = AppCompatResources.getDrawable(MainActivity.this, R.drawable.ic_image);
-                        Drawable expandIcon = AppCompatResources.getDrawable(MainActivity.this, R.drawable.ic_image);
-
                         new BottomSheetMenu(
                             MainActivity.this,
                             R.menu.sample_menu,
