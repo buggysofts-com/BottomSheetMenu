@@ -73,11 +73,11 @@ public class BottomSheetMenu {
      * Minimal constructor. Default icons and colors will be used.
      * <br><br>
      * Defaults:
-     * <br>- Pass null values to set the default icons.
      * <br>- Text color: <b>Primary text color (<i>?android:attr/textColorPrimary</i>)</b>)
      * <br>- Menu icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
      * <br>- Expand icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
-     * <br> You can also use the static getter methods to obtain the default properties.
+     * <br>- Menu background: <b>Theme default background (<i>?android:attr/colorBackground</i>)</b>
+     * <br> You can also use the static getter methods to obtain the other default properties.
      */
     public BottomSheetMenu(@NonNull Context context,
                            @MenuRes int menuRes,
@@ -103,11 +103,11 @@ public class BottomSheetMenu {
      * Minimal constructor. Default icons and colors will be used.
      * <br><br>
      * Defaults:
-     * <br>- Pass null values to set the default icons.
      * <br>- Text color: <b>Primary text color (<i>?android:attr/textColorPrimary</i>)</b>)
      * <br>- Menu icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
      * <br>- Expand icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
-     * <br> You can also use the static getter methods to obtain the default properties.
+     * <br>- Menu background: <b>Theme default background (<i>?android:attr/colorBackground</i>)</b>
+     * <br> You can also use the static getter methods to obtain the other default properties.
      */
     public BottomSheetMenu(@NonNull Context context,
                            @NonNull Menu menu,
@@ -137,7 +137,8 @@ public class BottomSheetMenu {
      * <br>- Text color: <b>Primary text color (<i>?android:attr/textColorPrimary</i>)</b>)
      * <br>- Menu icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
      * <br>- Expand icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
-     * <br> You can also use the static getter methods to obtain the default properties.
+     * <br>- Menu background: <b>Theme default background (<i>?android:attr/colorBackground</i>)</b>
+     * <br> You can also use the static getter methods to obtain the other default properties.
      */
     public BottomSheetMenu(@NonNull Context context,
                            @MenuRes int menuRes,
@@ -177,7 +178,8 @@ public class BottomSheetMenu {
      * <br>- Text color: <b>Primary text color (<i>?android:attr/textColorPrimary</i>)</b>)
      * <br>- Menu icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
      * <br>- Expand icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
-     * <br> You can also use the static getter methods to obtain the default properties.
+     * <br>- Menu background: <b>Theme default background (<i>?android:attr/colorBackground</i>)</b>
+     * <br> You can also use the static getter methods to obtain the other default properties.
      */
     public BottomSheetMenu(@NonNull Context context,
                            @NonNull Menu menu,
@@ -632,7 +634,7 @@ public class BottomSheetMenu {
      * Get the system provided default window background. This may change depend on active theme.
      */
     public static Drawable getDefaultMenuBackground(Context context) {
-        return new AttributeResolver(context).getDrawable(android.R.attr.windowBackground);
+        return new AttributeResolver(context).getDrawable(android.R.attr.colorBackground);
     }
 
     /**
