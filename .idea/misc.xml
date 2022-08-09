@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="BottomSheetMenu/src/main/res/layout/bottom_sheet_dialog_layout.xml" value="0.36929460580912865" />
+        <entry key="BottomSheetMenu/src/main/res/layout/bottom_sheet_menu_layout.xml" value="0.4463445917058572" />
+        <entry key="BottomSheetMenu/src/main/res/layout/menu_footer_view.xml" value="0.44548952543822146" />
+        <entry key="BottomSheetMenu/src/main/res/layout/menu_header_view.xml" value="0.4406922752216125" />
+        <entry key="BottomSheetMenu/src/main/res/layout/menu_item_node.xml" value="0.5" />
+        <entry key="BottomSheetMenu/src/main/res/layout/menu_title_view.xml" value="0.25138948268490807" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.4463445917058572" />
+        <entry key="app/src/main/res/layout/sample_footer.xml" value="0.44548952543822146" />
+        <entry key="app/src/main/res/layout/sample_header.xml" value="0.44548952543822146" />
+        <entry key="app/src/main/res/menu/sample_menu.xml" value="0.44548952543822146" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

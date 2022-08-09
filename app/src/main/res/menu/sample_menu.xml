@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_image" android:title="Image files" android:icon="@drawable/ic_image">
+        <menu>
+            <item android:title="PNG"/>
+            <item android:title="JPEG">
+                <menu>
+                    <item android:title="Type based JPEG">
+                        <menu>
+                            <item android:title="JPG"/>
+                            <item android:title="JPEG"/>
+                        </menu>
+                    </item>
+                    <item android:title="Compression based JPEG">
+                        <menu>
+                            <item android:title="Non-Compressed"/>
+                            <item android:title="Moderately-Compressed"/>
+                            <item android:title="Highly-Compressed"/>
+                        </menu>
+                    </item>
+                </menu>
+            </item>
+            <item android:title="BMP"/>
+        </menu>
+    </item>
+    <item android:id="@+id/menu_video" android:title="Video files" android:icon="@drawable/ic_video"/>
+    <item android:id="@+id/menu_pdf" android:title="PDF files" android:icon="@drawable/ic_pdf"/>
+</menu>
