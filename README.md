@@ -1,7 +1,8 @@
 # BottomSheetMenu [![Release](https://jitpack.io/v/buggysofts-com/BottomSheetMenu.svg)](https://jitpack.io/#buggysofts-com/BottomSheetMenu)
 A powerful &amp; customizable menu implementation for android. It supports any level of nested menu structures along with custom header and footer views, and much more. Follow the steps below to import the library to your project. You will also find some sample codes.
 
-####
+<br />
+
 ## Import
 
 #### Add JitPack repository to your project level build.gradle file
@@ -40,7 +41,8 @@ dependencies {
 ```
 And you are done importing the library.
 
-####
+<br />
+
 ## Sample codes
 
 To create a minimal bottom sheet menu...
