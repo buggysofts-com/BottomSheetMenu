@@ -124,4 +124,4 @@ bottomSheetMenu
 The above code selects different views for different selected menu item(having submenu). Also, it selects an initial header view. Similarly, you can set footer views with ```footerViewSelector(...)``` method.
 
 
-## Happy Coding!
+#### Happy Coding!
