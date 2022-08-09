@@ -40,7 +40,6 @@ dependencies {
 ```
 And you are done importing the library.
 <br />
-<br />
 ## Sample codes
 To create a minimal bottom sheet menu...
 ```
