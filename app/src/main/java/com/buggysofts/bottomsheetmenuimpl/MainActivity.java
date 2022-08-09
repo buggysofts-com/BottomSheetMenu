@@ -1,12 +1,16 @@
 package com.buggysofts.bottomsheetmenuimpl;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.content.res.AppCompatResources;
 
 import com.buggysofts.bottomsheetmenu.BottomSheetMenu;
 
@@ -27,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     try {
+                        Drawable itemPlaceHolder = AppCompatResources.getDrawable(MainActivity.this, R.drawable.ic_image);
+                        Drawable expandIcon = AppCompatResources.getDrawable(MainActivity.this, R.drawable.ic_image);
+
                         new BottomSheetMenu(
                             MainActivity.this,
                             R.menu.sample_menu,
