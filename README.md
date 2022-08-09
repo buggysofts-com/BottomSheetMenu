@@ -39,7 +39,8 @@ dependencies {
 }
 ```
 And you are done importing the library.
-<br />
+
+
 ## Sample codes
 To create a minimal bottom sheet menu...
 ```
@@ -54,7 +55,8 @@ BottomSheetMenu bottomSheetMenu = new BottomSheetMenu(
   }
 ).show();
 ```
-<br />
+
+
 You can use methods that follow builder pattern to set properties of different components of the menu. For example the following code snippet sets background, divider, menu icon place holder (in case a menu item does not have an icon), expand icon (for indicating submenu of a menu item), a title and finally it shows the menu. There are other constructors where you can set these properties all at once.
 ```
 bottomSheetMenu
