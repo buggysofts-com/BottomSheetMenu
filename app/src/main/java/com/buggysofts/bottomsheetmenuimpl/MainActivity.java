@@ -1,22 +1,18 @@
 package com.buggysofts.bottomsheetmenuimpl;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.content.res.AppCompatResources;
-
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.buggysofts.bottomsheetmenu.BottomSheetMenu;
 
 public class MainActivity extends AppCompatActivity {
     private Button show_menu_btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                             new BottomSheetMenu.MenuItemClickListener() {
                                 @Override
                                 public void onClick(MenuItem item) {
+                                    Toast.makeText(MainActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
                                 }
                             }
                         ).show();

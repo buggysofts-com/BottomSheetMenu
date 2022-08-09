@@ -29,11 +29,12 @@ public class BottomSheetMenuAdapter extends ArrayAdapter<MenuItem> {
 
     /**
      * Use the default icons and current theme colors.
-     * */
+     */
     public BottomSheetMenuAdapter(@NonNull Context context,
                                   @NonNull List<MenuItem> objects) {
         super(context, R.layout.menu_item_node, objects);
     }
+
     /**
      * Use the default icons and custom colors.
      * Use <b>null</b> to apply default colors.
@@ -43,7 +44,7 @@ public class BottomSheetMenuAdapter extends ArrayAdapter<MenuItem> {
      * <br>- Text color: <b>Primary text color (<i>?android:attr/textColorPrimary</i>)</b>)
      * <br>- Menu icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
      * <br>- Expand icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
-     * */
+     */
     public BottomSheetMenuAdapter(@NonNull Context context,
                                   @NonNull List<MenuItem> objects,
                                   @ColorInt Integer textColor,
@@ -55,6 +56,7 @@ public class BottomSheetMenuAdapter extends ArrayAdapter<MenuItem> {
         this.iconTint = iconTint;
         this.expandTint = expandTint;
     }
+
     /**
      * Use custom icons and custom colors.
      * Use <b>null</b> to use default icons colors.
@@ -65,7 +67,7 @@ public class BottomSheetMenuAdapter extends ArrayAdapter<MenuItem> {
      * <br>- Text color: <b>Primary text color (<i>?android:attr/textColorPrimary</i>)</b>)
      * <br>- Menu icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
      * <br>- Expand icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
-     * */
+     */
     public BottomSheetMenuAdapter(@NonNull Context context,
                                   @NonNull List<MenuItem> objects,
                                   @Nullable Drawable menuIconPlaceHolder,
@@ -87,7 +89,7 @@ public class BottomSheetMenuAdapter extends ArrayAdapter<MenuItem> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         ViewHolder holder = null;
-        if(convertView == null){
+        if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(
                 R.layout.menu_item_node,
                 null
@@ -104,23 +106,23 @@ public class BottomSheetMenuAdapter extends ArrayAdapter<MenuItem> {
 
         // set view properties
         MenuItem item = getItem(position);
-        if(item != null){
+        if (item != null) {
             // apply texts and icons
             holder.item_txt.setText(item.getTitle());
-            if(item.getIcon() != null){
+            if (item.getIcon() != null) {
                 holder.item_icon.setImageDrawable(item.getIcon());
             } else {
-                if(menuIconPlaceHolder != null){
+                if (menuIconPlaceHolder != null) {
                     holder.item_icon.setImageDrawable(menuIconPlaceHolder);
                 } else {
                     // will use default one
                 }
             }
-            if(item.hasSubMenu()){
+            if (item.hasSubMenu()) {
                 // make the expand icon visible if a submenu is available
                 holder.item_expand.setVisibility(View.VISIBLE);
 
-                if(menuExpandIcon != null){
+                if (menuExpandIcon != null) {
                     holder.item_expand.setImageDrawable(menuExpandIcon);
                 } else {
                     // will use default one
@@ -131,17 +133,17 @@ public class BottomSheetMenuAdapter extends ArrayAdapter<MenuItem> {
             }
 
             // apply colors and tints
-            if(textColor != null){
+            if (textColor != null) {
                 holder.item_txt.setTextColor(textColor);
             } else {
                 // will use default one
             }
-            if(iconTint != null){
+            if (iconTint != null) {
                 holder.item_icon.setColorFilter(iconTint);
             } else {
                 // will use default one
             }
-            if(expandTint != null){
+            if (expandTint != null) {
                 holder.item_expand.setColorFilter(expandTint);
             } else {
                 // will use default one
