@@ -126,7 +126,7 @@ The above code selects different views for different selected menu item(having s
 <br />
 
 ## Images
-Here are some example images of the menu containing a header and a footer view. The one above the top divider line is the header view, and the one below the bottom divider line is the footer view. You can select your desider header or footer views, or customize the menu styles and behaviour by following the topics above. Note, the styling applied to the menu does not apply on header and footer views, they are external views and you should apply necessary styling to them prior to use them in the menu.
+Here are some example images of the menu containing a header and a footer view. The one above the top divider line is the header view, and the one below the bottom divider line is the footer view. You can select your desider header or footer views, or customize the menu styles and behaviours by following the topics above. Note, the styling applied to the menu does not apply on header and footer views, they are external views and you should apply necessary styling to them before using them in the menu.
 
 Root menu:
 ![Root menu](/app/src/main/res/drawable/root_menu.png)
