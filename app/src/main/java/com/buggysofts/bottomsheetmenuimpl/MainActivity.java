@@ -15,6 +15,10 @@ import androidx.appcompat.content.res.AppCompatResources;
 
 import com.buggysofts.bottomsheetmenu.BottomSheetMenu;
 
+/**
+ * Test or sample activity.
+ * */
+
 public class MainActivity extends AppCompatActivity {
     private Button show_menu_btn;
 
