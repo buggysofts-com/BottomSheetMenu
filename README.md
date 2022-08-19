@@ -132,7 +132,7 @@ Root menu:
 ![Root menu](/app/src/main/res/drawable/root_menu.png)
 
 Nested submenu:
-![](/app/src/main/res/drawable/menu_level_2.png)
+![Nested submenu](/app/src/main/res/drawable/menu_level_2.png)
 
 
 #### Happy Coding!
