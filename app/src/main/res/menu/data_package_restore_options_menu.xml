@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bmsmi7sm2"
+        android:icon="@drawable/ic_android"
+        android:title="App only" />
+    <item
+        android:id="@+id/bmsmi7sm3"
+        android:icon="@drawable/ic_data"
+        android:title="Data only" />
+    <item
+        android:id="@+id/bmsmi7sm1"
+        android:icon="@drawable/ic_data"
+        android:title="App + Data" />
+</menu>

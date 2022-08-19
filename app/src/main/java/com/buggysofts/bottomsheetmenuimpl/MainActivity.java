@@ -1,5 +1,6 @@
 package com.buggysofts.bottomsheetmenuimpl;
 
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -40,7 +41,36 @@ public class MainActivity extends AppCompatActivity {
                                     Toast.makeText(MainActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
                                 }
                             }
-                        ).show();
+                        )
+                            .headerViewSelector(new BottomSheetMenu.ViewSelector() {
+                                @Nullable
+                                @Override
+                                public View getInitialView() {
+                                    return getLayoutInflater().inflate(R.layout.sample_header, null);
+                                }
+
+                                @Nullable
+                                @Override
+                                public View selectViewForItem(MenuItem item) {
+                                    return getLayoutInflater().inflate(R.layout.sample_header, null);
+                                }
+                            }).footerViewSelector(new BottomSheetMenu.ViewSelector() {
+                                @Nullable
+                                @Override
+                                public View getInitialView() {
+                                    return getLayoutInflater().inflate(R.layout.sample_footer, null);
+                                }
+
+                                @Nullable
+                                @Override
+                                public View selectViewForItem(MenuItem item) {
+                                    return getLayoutInflater().inflate(R.layout.sample_footer, null);
+                                }
+                            })
+                            .iconTint(Color.parseColor("#666666"))
+                            .expandIconTint(Color.parseColor("#666666"))
+                            .dividerDrawable(BottomSheetMenu.getSystemDefaultDivider(MainActivity.this))
+                            .show();
                     } catch (Exception e) {
                         e.printStackTrace();
                     }

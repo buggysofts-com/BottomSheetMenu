@@ -36,7 +36,7 @@ dependencyResolutionManagement {
 
 dependencies {
     ...
-    implementation 'com.github.buggysofts-com:BottomSheetMenu:v1.0.2'
+    implementation 'com.github.buggysofts-com:BottomSheetMenu:v1.0.4'
 }
 ```
 And you are done importing the library.

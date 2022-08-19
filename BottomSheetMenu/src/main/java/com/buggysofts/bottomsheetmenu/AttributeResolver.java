@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
-public class AttributeResolver {
+class AttributeResolver {
     private final Context context;
     private final TypedValue typedValue;
     private final Resources.Theme theme;

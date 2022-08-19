@@ -16,7 +16,7 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-public class BottomSheetMenuAdapter extends ArrayAdapter<MenuItem> {
+class BottomSheetMenuAdapter extends ArrayAdapter<MenuItem> {
     @ColorInt
     private Integer textColor;
     @ColorInt

@@ -460,7 +460,7 @@ public class BottomSheetMenu {
     /**
      * Set a background color to the entire menu ui. If not specified, default one will be used. To apply default manually, use the available static method.
      */
-    public BottomSheetMenu menuBackgroundColor(@Nullable Integer menuBackgroundColor) {
+    public BottomSheetMenu menuBackgroundColor(@ColorInt @Nullable Integer menuBackgroundColor) {
         this.menuBackground =
             menuBackgroundColor != null ?
                 new ColorDrawable(menuBackgroundColor) :
@@ -472,7 +472,7 @@ public class BottomSheetMenu {
     /**
      * Set text color of the text components. If not specified, default one will be used. To apply default manually, use the available static method.
      */
-    public BottomSheetMenu textColor(@Nullable Integer textColor) {
+    public BottomSheetMenu textColor(@ColorInt @Nullable Integer textColor) {
         this.textColor = textColor;
         return this;
     }
@@ -480,7 +480,7 @@ public class BottomSheetMenu {
     /**
      * Set menu item icon tint color. If not specified, default one will be used. To apply default manually, use the available static method.
      */
-    public BottomSheetMenu iconTint(@Nullable Integer iconTint) {
+    public BottomSheetMenu iconTint(@ColorInt @Nullable Integer iconTint) {
         this.menuItemIconTint = iconTint;
         return this;
     }
@@ -488,7 +488,7 @@ public class BottomSheetMenu {
     /**
      * Set expand icon tint color. If not specified, default one will be used. To apply default manually, use the available static method.
      */
-    public BottomSheetMenu expandIconTint(@Nullable Integer expandTint) {
+    public BottomSheetMenu expandIconTint(@ColorInt @Nullable Integer expandTint) {
         this.expandIconTint = expandTint;
         return this;
     }
