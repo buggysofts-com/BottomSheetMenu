@@ -123,5 +123,16 @@ bottomSheetMenu
 ```
 The above code selects different views for different selected menu item(having submenu). Also, it selects an initial header view. Similarly, you can set footer views with ```footerViewSelector(...)``` method.
 
+<br />
+
+## Images
+Here are some example images of the menu containing a header and a footer view. The one above the top divider line is the header view, and the one below the bottom divider line is the footer view. You can select your desider header or footer views, or customize the menu styles and behaviour by following the topics above. Note, the styling applied to the menu does not apply on header and footer views, they are external views and you should apply necessary styling to them prior to use them in the menu.
+
+Root menu:
+![Root menu](/app/src/main/res/drawable/root_menu.png)
+
+Nested submenu:
+![](/app/src/main/res/drawable/menu_level_2.png)
+
 
 #### Happy Coding!
