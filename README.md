@@ -5,8 +5,7 @@ A powerful &amp; customizable menu implementation for android. It supports any l
 <br />
 
 ## Import
-
-#### Add JitPack repository to your project level build.gradle file
+Add JitPack repository to your project level build.gradle file
 ```
 ...
 
@@ -17,8 +16,7 @@ allprojects {
     }
 }
 ```
-
-#### Or, in newer android projects, if you need to the add repository in settings.gradle file...
+Or, in newer android projects, if you need to the add repository in settings.gradle file...
 ```
 ...
 
@@ -30,8 +28,7 @@ dependencyResolutionManagement {
     }
 }
 ```
-
-#### Finally add this dependency to your app/module level build.gradle file
+Finally, add this dependency to your app/module level build.gradle file
 ```
 ...
 
@@ -136,4 +133,9 @@ Nested submenu:
 ![Nested submenu](/app/src/main/res/drawable/menu_level_2.png)
 
 
-#### Happy Coding!
+<br />
+<br />
+
+Please share & rate the library if you find it useful.
+
+### Happy coding!
