@@ -1,11 +1,11 @@
 # BottomSheetMenu [![Release](https://jitpack.io/v/buggysofts-com/BottomSheetMenu.svg)](https://jitpack.io/#buggysofts-com/BottomSheetMenu)
+
 A powerful &amp; customizable menu implementation for android. It supports any level of nested menu structures along with custom header and footer views, and much more. Follow the steps below to import the library to your project. You will also find some sample codes.
 
 <br />
 
 ## Import
-
-#### Add JitPack repository to your project level build.gradle file
+Add JitPack repository to your project level build.gradle file
 ```
 ...
 
@@ -16,8 +16,7 @@ allprojects {
     }
 }
 ```
-
-#### Or, in newer android projects, if you need to the add repository in settings.gradle file...
+Or, in newer android projects, if you need to the add repository in settings.gradle file...
 ```
 ...
 
@@ -29,8 +28,7 @@ dependencyResolutionManagement {
     }
 }
 ```
-
-#### Finally add this dependency to your app/module level build.gradle file
+Finally, add this dependency to your app/module level build.gradle file
 ```
 ...
 
@@ -123,5 +121,21 @@ bottomSheetMenu
 ```
 The above code selects different views for different selected menu item(having submenu). Also, it selects an initial header view. Similarly, you can set footer views with ```footerViewSelector(...)``` method.
 
+<br />
 
-#### Happy Coding!
+## Images
+Here are some example images of the menu containing a header and a footer view. The one above the top divider line is the header view, and the one below the bottom divider line is the footer view. You can select your desider header or footer views, or customize the menu styles and behaviours by following the topics above. Note, the styling applied to the menu does not apply on header and footer views, they are external views and you should apply necessary styling to them before using them in the menu.
+
+Root menu:
+![Root menu](/app/src/main/res/drawable/root_menu.png)
+
+Nested submenu:
+![Nested submenu](/app/src/main/res/drawable/menu_level_2.png)
+
+
+<br />
+<br />
+
+Please share & rate the library if you find it useful.
+
+### Happy coding!
