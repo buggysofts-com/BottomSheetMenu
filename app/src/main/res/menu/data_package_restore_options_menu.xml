@@ -12,4 +12,49 @@
         android:id="@+id/bmsmi7sm1"
         android:icon="@drawable/ic_data"
         android:title="App + Data" />
+    <item
+        android:icon="@drawable/ic_android"
+        android:title="App only" />
+    <item
+        android:icon="@drawable/ic_data"
+        android:title="Data only" />
+    <item
+        android:icon="@drawable/ic_data"
+        android:title="App + Data" />
+    <item
+        android:icon="@drawable/ic_android"
+        android:title="App only" />
+    <item
+        android:icon="@drawable/ic_data"
+        android:title="Data only" />
+    <item
+        android:icon="@drawable/ic_data"
+        android:title="App + Data" />
+    <item
+        android:icon="@drawable/ic_android"
+        android:title="App only" />
+    <item
+        android:icon="@drawable/ic_data"
+        android:title="Data only" />
+    <item
+        android:icon="@drawable/ic_data"
+        android:title="App + Data" />
+    <item
+        android:icon="@drawable/ic_android"
+        android:title="App only" />
+    <item
+        android:icon="@drawable/ic_data"
+        android:title="Data only" />
+    <item
+        android:icon="@drawable/ic_data"
+        android:title="App + Data" />
+    <item
+        android:icon="@drawable/ic_android"
+        android:title="App only" />
+    <item
+        android:icon="@drawable/ic_data"
+        android:title="Data only" />
+    <item
+        android:icon="@drawable/ic_data"
+        android:title="App + Data" />
 </menu>

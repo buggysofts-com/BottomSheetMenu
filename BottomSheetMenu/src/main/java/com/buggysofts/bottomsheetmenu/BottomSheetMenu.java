@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -21,9 +22,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.appcompat.widget.PopupMenu;
 
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-import java.net.InterfaceAddress;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,6 +36,7 @@ public class BottomSheetMenu {
     private final Menu mainMenu;
     // main root view, menu list view
     private final View mainView;
+    private final FrameLayout bottomSheetContentRoot;
     private final ListView menuList;
     private final View headerView;
     private final View footerView;
@@ -233,6 +235,9 @@ public class BottomSheetMenu {
                     R.layout.menu_footer_view,
                     null
                 );
+                bottomSheetContentRoot = mainView.findViewById(
+                    R.id.bottom_sheet_content_root
+                );
                 menuList = mainView.findViewById(
                     R.id.menu_list
                 );
@@ -248,6 +253,7 @@ public class BottomSheetMenu {
 
                 dialog = new BottomSheetDialog(context);
                 dialog.setContentView(mainView);
+                dialog.getBehavior().setState(BottomSheetBehavior.STATE_EXPANDED);
             }
 
             // init listeners

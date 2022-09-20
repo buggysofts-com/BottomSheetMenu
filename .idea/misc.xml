@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.5557291666666667" />
+        <entry key="../../.gradle/caches/transforms-3/bfec8dfcaf6c34e166a516bbd7a3f400/transformed/material-1.6.1/res/layout/design_bottom_sheet_dialog.xml" value="0.1" />
         <entry key="BottomSheetMenu/src/main/res/layout/bottom_sheet_dialog_layout.xml" value="0.36929460580912865" />
-        <entry key="BottomSheetMenu/src/main/res/layout/bottom_sheet_menu_layout.xml" value="0.4463445917058572" />
+        <entry key="BottomSheetMenu/src/main/res/layout/bottom_sheet_menu_layout.xml" value="0.25" />
         <entry key="BottomSheetMenu/src/main/res/layout/menu_footer_view.xml" value="0.44548952543822146" />
         <entry key="BottomSheetMenu/src/main/res/layout/menu_header_view.xml" value="0.4406922752216125" />
         <entry key="BottomSheetMenu/src/main/res/layout/menu_item_node.xml" value="0.5" />

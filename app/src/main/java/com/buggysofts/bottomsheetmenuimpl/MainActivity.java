@@ -1,9 +1,7 @@
 package com.buggysofts.bottomsheetmenuimpl;
 
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +9,6 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.content.res.AppCompatResources;
 
 import com.buggysofts.bottomsheetmenu.BottomSheetMenu;
 
@@ -37,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     showBuilderBasedMenu();
                 }
-                private void showFullConstructorBasedMenu(){
+
+                private void showFullConstructorBasedMenu() {
                     try {
                         new BottomSheetMenu(
                             MainActivity.this,
@@ -73,11 +71,12 @@ public class MainActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-                private void showBuilderBasedMenu(){
+
+                private void showBuilderBasedMenu() {
                     try {
                         new BottomSheetMenu(
                             MainActivity.this,
-                            R.menu.sample_menu,
+                            R.menu.data_package_restore_options_menu,
                             new BottomSheetMenu.MenuItemClickListener() {
                                 @Override
                                 public void onClick(MenuItem item) {
