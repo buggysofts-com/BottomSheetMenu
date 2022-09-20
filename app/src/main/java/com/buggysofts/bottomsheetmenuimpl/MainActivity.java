@@ -35,6 +35,45 @@ public class MainActivity extends AppCompatActivity {
             new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    showBuilderBasedMenu();
+                }
+                private void showFullConstructorBasedMenu(){
+                    try {
+                        new BottomSheetMenu(
+                            MainActivity.this,
+                            R.menu.data_package_restore_options_menu,
+                            new BottomSheetMenu.ViewSelector() {
+                                @Nullable
+                                @org.jetbrains.annotations.Nullable
+                                @Override
+                                public View getInitialView() {
+                                    return null;
+                                }
+
+                                @Nullable
+                                @org.jetbrains.annotations.Nullable
+                                @Override
+                                public View selectViewForItem(MenuItem item) {
+                                    return null;
+                                }
+                            },
+                            null,
+                            "Installed app context menu",
+                            null, null,
+                            BottomSheetMenu.getSystemDefaultDivider(MainActivity.this),
+                            null, null, null, null,
+                            new BottomSheetMenu.MenuItemClickListener() {
+                                @Override
+                                public void onClick(MenuItem item) {
+
+                                }
+                            }
+                        ).show();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+                private void showBuilderBasedMenu(){
                     try {
                         new BottomSheetMenu(
                             MainActivity.this,
