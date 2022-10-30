@@ -113,7 +113,7 @@ public class BottomSheetMenu {
      */
     public BottomSheetMenu(@NonNull Context context,
                            @NonNull Menu menu,
-                           @NonNull MenuItemClickListener listener) throws Exception {
+                           @NonNull MenuItemClickListener listener) {
         this(
             context,
             menu,
@@ -195,7 +195,7 @@ public class BottomSheetMenu {
                            @Nullable @ColorInt Integer textColor,
                            @Nullable @ColorInt Integer menuItemIconTint,
                            @Nullable @ColorInt Integer expandIconTint,
-                           @NonNull MenuItemClickListener listener) throws Exception {
+                           @NonNull MenuItemClickListener listener) {
         this.context = context;
         this.mainMenu = menu;
         this.headerViewSelector = headerViewSelector;
