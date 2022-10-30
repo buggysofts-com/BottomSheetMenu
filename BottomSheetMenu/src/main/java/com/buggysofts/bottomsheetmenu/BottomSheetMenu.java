@@ -9,8 +9,8 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -35,11 +35,10 @@ public class BottomSheetMenu {
     // menu to be shown
     private final Menu mainMenu;
     // main root view, menu list view
-    private final View mainView;
-    private final FrameLayout bottomSheetContentRoot;
-    private final ListView menuList;
-    private final View headerView;
-    private final View footerView;
+    private final ViewGroup mainView;
+    private final BottomSheetListView menuList;
+    private final ViewGroup headerView;
+    private final ViewGroup footerView;
     private final TextView titleView;
     private final LinearLayout customHeaderHolder;
     private final LinearLayout customFooterHolder;
@@ -223,29 +222,32 @@ public class BottomSheetMenu {
                 LayoutInflater inflater = LayoutInflater.from(context);
 
                 // initialize class field views
-                mainView = inflater.inflate(
+                mainView = (ViewGroup) inflater.inflate(
                     R.layout.bottom_sheet_menu_layout,
-                    null
+                    null,
+                    false
                 );
-                headerView = inflater.inflate(
-                    R.layout.menu_header_view,
-                    null
-                );
-                footerView = inflater.inflate(
-                    R.layout.menu_footer_view,
-                    null
-                );
-                bottomSheetContentRoot = mainView.findViewById(
-                    R.id.bottom_sheet_content_root
-                );
+
                 menuList = mainView.findViewById(
                     R.id.menu_list
+                );
+
+                headerView = (ViewGroup) inflater.inflate(
+                    R.layout.menu_header_view,
+                    menuList,
+                    false
                 );
                 titleView = headerView.findViewById(
                     R.id.menu_title
                 );
                 customHeaderHolder = headerView.findViewById(
                     R.id.custom_header_holder
+                );
+
+                footerView = (ViewGroup) inflater.inflate(
+                    R.layout.menu_footer_view,
+                    menuList,
+                    false
                 );
                 customFooterHolder = footerView.findViewById(
                     R.id.custom_footer_holder
@@ -291,18 +293,23 @@ public class BottomSheetMenu {
     /////////////////////////
 
     private void applyProperties() {
-        // add header and footer views in the list view
+        // set item to be focusable
+        menuList.setItemsCanFocus(true);
+
+        // set header and footer dividers if any divider is specified
         menuList.setHeaderDividersEnabled(dividerDrawable != null);
         menuList.setFooterDividersEnabled(dividerDrawable != null);
+
+        // add header and footer views in the list view
         menuList.addHeaderView(
             headerView,
             null,
-            dividerDrawable != null
+            true
         );
         menuList.addFooterView(
             footerView,
             null,
-            dividerDrawable != null
+            true
         );
 
         // set initial properties to the views

@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -88,7 +90,26 @@ public class MainActivity extends AppCompatActivity {
                                 @Nullable
                                 @Override
                                 public View getInitialView() {
-                                    return getLayoutInflater().inflate(R.layout.sample_header, null);
+                                    View inflate = getLayoutInflater().inflate(R.layout.sample_header, null);
+                                    ImageView imageView = inflate.findViewById(R.id.imageView);
+                                    TextView textView = inflate.findViewById(R.id.textView);
+                                    imageView.setOnClickListener(
+                                        new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+                                                Toast.makeText(MainActivity.this, "Hi from head!", Toast.LENGTH_SHORT).show();
+                                            }
+                                        }
+                                    );
+                                    textView.setOnClickListener(
+                                        new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+                                                Toast.makeText(MainActivity.this, "Hi from body!", Toast.LENGTH_SHORT).show();
+                                            }
+                                        }
+                                    );
+                                    return inflate;
                                 }
 
                                 @Nullable

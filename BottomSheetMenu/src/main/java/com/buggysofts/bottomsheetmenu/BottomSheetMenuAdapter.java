@@ -92,7 +92,8 @@ class BottomSheetMenuAdapter extends ArrayAdapter<MenuItem> {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(
                 R.layout.menu_item_node,
-                null
+                parent,
+                false
             );
             holder = new ViewHolder(
                 convertView.findViewById(R.id.item_txt),

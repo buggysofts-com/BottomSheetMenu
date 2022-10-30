@@ -21,11 +21,6 @@ public class BottomSheetListView extends ListView {
     }
 
     @Override
-    public boolean onInterceptTouchEvent(MotionEvent ev) {
-        return true;
-    }
-
-    @Override
     public boolean onTouchEvent(MotionEvent ev) {
         if (canScrollVertically(this)) {
             getParent().requestDisallowInterceptTouchEvent(true);
