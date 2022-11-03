@@ -12,8 +12,7 @@
         android:id="@+id/item_icon"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        app:srcCompat="@drawable/ic_menu"
-        app:tint="?android:attr/colorAccent" />
+        app:srcCompat="@drawable/ic_menu" />
 
     <TextView
         android:id="@+id/item_txt"

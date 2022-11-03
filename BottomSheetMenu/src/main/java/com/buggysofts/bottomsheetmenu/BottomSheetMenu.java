@@ -75,7 +75,7 @@ public class BottomSheetMenu {
      * <br><br>
      * Defaults:
      * <br>- Text color: <b>Primary text color (<i>?android:attr/textColorPrimary</i>)</b>)
-     * <br>- Menu icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
+     * <br>- Menu icon tint: <b>No tints will be applied by default.</b>
      * <br>- Expand icon tint: <b>Theme default accent color (<i>?android:attr/colorAccent</i>)</b>
      * <br>- Menu background: <b>Theme default background (<i>?android:attr/colorBackground</i>)</b>
      * <br> You can also use the static getter methods to obtain the other default properties.

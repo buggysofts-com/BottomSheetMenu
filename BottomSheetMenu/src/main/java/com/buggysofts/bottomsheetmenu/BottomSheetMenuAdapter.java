@@ -137,17 +137,17 @@ class BottomSheetMenuAdapter extends ArrayAdapter<MenuItem> {
             if (textColor != null) {
                 holder.item_txt.setTextColor(textColor);
             } else {
-                // will use default one
+                // system default will be used
             }
             if (iconTint != null) {
                 holder.item_icon.setColorFilter(iconTint);
             } else {
-                // will use default one
+                // no color filter will be applied
             }
             if (expandTint != null) {
                 holder.item_expand.setColorFilter(expandTint);
             } else {
-                // will use default one
+                // no color filter will be applied
             }
         } else {
             // something is wrong - control should not be in here

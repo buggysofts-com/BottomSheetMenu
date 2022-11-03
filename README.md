@@ -34,7 +34,7 @@ Finally, add this dependency to your app/module level build.gradle file
 
 dependencies {
     ...
-    implementation 'com.github.buggysofts-com:BottomSheetMenu:v1.0.8'
+    implementation 'com.github.buggysofts-com:BottomSheetMenu:v1.0.9'
 }
 ```
 And you are done importing the library.
