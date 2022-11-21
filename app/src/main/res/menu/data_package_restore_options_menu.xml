@@ -3,10 +3,12 @@
     <item
         android:id="@+id/bmsmi7sm2"
         android:icon="@drawable/ic_android"
+        android:enabled="false"
         android:title="App only" />
     <item
         android:id="@+id/bmsmi7sm3"
         android:icon="@drawable/ic_data"
+        android:visible="false"
         android:title="Data only" />
     <item
         android:id="@+id/bmsmi7sm1"

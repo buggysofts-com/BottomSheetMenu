@@ -1,6 +1,7 @@
 package com.buggysofts.bottomsheetmenu;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -148,6 +149,21 @@ class BottomSheetMenuAdapter extends ArrayAdapter<MenuItem> {
                 holder.item_expand.setColorFilter(expandTint);
             } else {
                 // no color filter will be applied
+            }
+
+            // if disabled, apply disabled menu appearance
+            if(!item.isEnabled()){
+                holder.item_txt.setEnabled(false);
+                holder.item_icon.setEnabled(false);
+                holder.item_expand.setEnabled(false);
+                holder.item_icon.setImageAlpha(64);
+                holder.item_expand.setImageAlpha(64);
+            } else {
+                holder.item_txt.setEnabled(true);
+                holder.item_icon.setEnabled(true);
+                holder.item_expand.setEnabled(true);
+                holder.item_icon.setImageAlpha(255);
+                holder.item_expand.setImageAlpha(255);
             }
         } else {
             // something is wrong - control should not be in here

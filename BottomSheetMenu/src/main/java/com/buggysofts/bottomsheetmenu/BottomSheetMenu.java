@@ -265,12 +265,13 @@ public class BottomSheetMenu {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                             ListView mainList = (ListView) parent;
-                            if (position >= 1 && position < mainList.getCount() - 1) {
+
+                            // get clicked item reference
+                            MenuItem item = (MenuItem) parent.getItemAtPosition(position);
+
+                            if ((position >= 1 && position < mainList.getCount() - 1) && item.isEnabled()) {
                                 // first dismiss
                                 dialog.dismiss();
-
-                                // get clicked item reference
-                                MenuItem item = (MenuItem) parent.getItemAtPosition(position);
 
                                 // perform click
                                 listener.onClick(item);
@@ -565,7 +566,9 @@ public class BottomSheetMenu {
 
         List<MenuItem> menuItems = new ArrayList<>(0);
         for (int i = 0; i < menu.size(); ++i) {
-            menuItems.add(menu.getItem(i));
+            if(menu.getItem(i).isVisible()) {
+                menuItems.add(menu.getItem(i));
+            }
         }
 
         menuList.setAdapter(
